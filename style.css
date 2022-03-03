@@ -1,0 +1,83 @@
+/* 
+CORES: 
+rgb(0,100,0)
+#2bab0d verde claro
+#b2ff00 verde fluorescente
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-bar{
+	
+	background: rgb(0,100,0);
+	text-align: center;
+}
+
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+}
+
+.menu-bar ul li{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+.menu-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-bar ul li ul{
+	display: none;
+}
+
+.active, .menu-bar ul li:hover{
+	background: #2bab0d;
+}
+
+.menu-bar ul li:hover ul{
+	display: block;
+	text-align: left;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-left: -15px;
+	margin-top: 15px;
+}
+
+.menu-bar ul li:hover ul li{
+	padding: 10px;
+	background-color: transparent;
+	width: 145px;
+	border-bottom: 1px dotted white;
+}
+
+.menu-bar ul li:hover ul li:last-child{
+	border-bottom: none;
+}
+
+.menu-bar ul li:hover ul li a:hover{
+	color: #b2ff00;
+}
+
+.sub-menu-2{
+	display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+	display: block;
+	position: absolute;
+	margin-left: 150px;
+	margin-top: -66px;
+}
+
+
+
+
